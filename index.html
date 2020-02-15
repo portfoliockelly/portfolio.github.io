@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', '', { 'optimize_id': 'GTM-K7TCZCL'});
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="Programming Portfolio">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Craig Kelly">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .imgscale {
+           
+
+        }
+
+        body {
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #262626;
+            height:100%;
+            top:500px;
+            margin-bottom:-200px;
+            padding-top:-10%;
+        }
+
+        .AlphaFiller {
+            background-color: none;
+            color: black;
+            padding: 0px;
+            font-size: 100%;
+            border: 5px;
+            position: relative;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .header {
+            background-color: none;
+            color: white;
+            padding: 7px;
+            font-size: 100%;
+            border: 5px;
+            position: relative;
+            margin-top: -170px;
+            margin-bottom: -3px;
+            border-radius: 25px;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-bottom-right-radius:25%;
+        }
+
+        .footer {
+            background-color: black;
+            color: black;
+            padding-left: 7px;
+            padding-right: 7px;
+            display: block;
+            line-height: 2;
+            height: 150px;
+            border-top:25px thick;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-top-left-radius: 25%;
+            border-top-right-radius: 25%;
+            margin: 0;
+            position: relative;
+            width: 100%;
+        }
+
+        .footerText {
+           margin-top: 40px;
+            margin-left: 10%;
+            height: 10px;
+            padding-top: 20px;
+            width:20px;
+            position:absolute;
+            object-position:left;
+           
+         
+            
+        }
+
+        .img-Portrate {
+            margin-left: 1500px;
+            position:static;
+        }
+
+        h1 {
+            margin: -15px;
+            border-radius: 0;
+            padding: 0;
+            height: inherit;
+            border-radius: 25px;
+        }
+
+
+        h2 {
+            margin-bottom: 0;
+            margin-top: 0px;
+            marker: none;
+        }
+
+        .h3 {
+            margin-bottom: 0;
+            margin-top: 0px;
+            marker: none;
+        }
+
+        .top-left-Logo {
+            text-decoration-color: white;
+            position: absolute;
+            top: 50%;
+            left: 35px;
+            font-size: 45px;
+            font-style: italic;
+            font-display: block;
+            color: white;
+            margin-top: -90px;
+        }
+
+        .linkColour {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* >>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<< */
+        .topnav {
+            overflow: hidden;
+            background-position: left;
+            enable-background: accumulate;
+            background-image: url(whiteAlpha.png);
+            margin-top: auto;
+            color: black;
+            position: relative;
+            background-repeat: repeat-x;
+        }
+
+            .topnav a {
+                position: center;
+                float: left;
+                display: block;
+                color: black;
+                text-align: left;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 27px;
+            }
+
+                .topnav a:hover {
+                    background-color: #81513e;
+                    color: black;
+                    background-position: left;
+                    background-repeat: repeat;
+                }
+
+                .topnav a.active {
+                    background-color: white;
+                    color: black;
+                }
+
+            .topnav .icon {
+                display: none;
+            }
+
+        @media screen and (max-width: 992px) {
+            .topnav a:not(:first-child) {
+                display: none;
+                width: auto;
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+                .topnav.responsive .icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                .topnav.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+            background-color: none;
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+          
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: -12px;
+            margin-right: -12px;
+            z-index:1;
+        }
+
+        li {
+            float: initial;
+            margin: 0;
+        }
+
+            li b {
+                float: left;
+            }
+
+            li a {
+                display: compact;
+                color: red;
+                text-align: center;
+                padding: 1px 1px;
+                text-decoration: solid;
+                border-radius: 25px;
+                margin: 0;
+            }
+
+                li a:hover {
+                    background-color: #111;
+                }
+
+        .div2 {
+            position: center;
+            width: 90%;
+            height:100%;
+            margin: 6%;
+            margin-bottom:-6%;
+            /*border: 1px dashed gray;*/
+            background-color: #d9d9d9;
+            padding-bottom:10%;
+            border-radius: 25px;
+            top:500px;
+            
+            
+        }
+
+        .Maintinence {
+            position: absolute;
+            margin-bottom: auto;
+            margin-top: auto;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div2" id="central">
+        <div class="header">
+
+            <div class="header">
+                <div class="row">
+
+
+                    <h1>
+                        <img src="/LogoImageBannarPic.png" alt="LandscapeImg" style="width: 100% " height="450" border-radius="25px" />
+                    </h1>   <div class="col-sm-8">
+
+                        <div class="row">
+                            <div class="top-left-Logo">
+                                <div class="col-sm-8" style="width:200px" height="10">
+                                    <h2><a href="index.html" style="text-decoration:none"><b style="color:white"> Portfolio.<br /><small style="font-size:30px">Craig Kelly</small> </b></a></h2>
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <ul>
+                <li>
+                    <div class="topnav" id="myTopnav">
+                        <div class="AlphaFiller">
+                            <div style="padding-left:35%">
+                                <p></p>
+                                <a href="index.html">About</a>
+                                <a href="Page2.html">OOP</a>
+                                <a href="Page3.html">UtilityAI</a>
+
+                                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+            </ul>
+
+            <!-- <div class="Maintinence">
+        <img src="/construction.png" alt="LandscapeImg" style="width: 100% " height="450" border-radius="25px" />
+    </div>-->
+
+            <div style="padding-left:16px" padding-right="16" height="100%">
+                <h1>&nbsp;</h1>
+                <h2><span style="color: #000000;">About me</span></h2>
+                <p><span style="color: #000000;">Hi, I&rsquo;m Craig.</span></p>
+                <p><span style="color: #000000;">I am in my 30's and over the last few years, I have fallen in love with the world of programming.</span></p>
+                <p><span style="color: #000000;">Having spent most of my career in a completely different field, I had always been more interested in the technical aspects of things. So, in 2016 I returned to education to learn more about programming.</span></p>
+                <h3><span style="color: #000000;">Game Development. A Brief Summary</span></h3>
+                <p><span style="color: #000000;">Returning to Education I learned how to program in C#. Throughout this period, I learned how to program for computer applications, creating small applications such as surveys, calculators, multiple choice quiz, and Video Games. Through this learning process, it taught me how to plan forward on the technical side using diagrams such as UML, Activity diagrams and design documentation. From then I have worked in group projects of nine-plus as a part of the key programming team making a game for client-based briefs, keeping to a set schedule and deadlines using visual studio, Unity, and XNA.</span></p>
+                <h2><span style="color: #000000;">Still Eager to Learn More</span></h2>
+                <p><span style="color: #000000;">I have no intention of settling for C# programming. I am still teaching myself new logic languages such as HTML and CSS, for example, I wrote this website in Visual Studio. I have also written small booking systems for recording customer bookings with dates of arrival that were stored in a small internal back up drive within the workplace. This would also send out an email to the client and company confirming the booking. This was in the aim to make the system faster and easier to deal with when handling consumers.</span></p>
+                <p><span style="color: #000000;">Thank for reading this. There are some examples of my work in the tab links.</span></p>
+
+                <ul>
+
+                    <li>
+                        <script>
+                            function myFunction() {
+                                var x = document.getElementById("myTopnav");
+                                if (x.className === "topnav") {
+                                    x.className += " responsive";
+                                } else {
+                                    x.className = "topnav";
+                                }
+                            }
+                        </script>
+
+                </ul>
+
+
+            </div>
+        </div>
+        
+
+    </div>
+    <div class="footer" style="width:100%" >
+        <div class="footerText">
+            <footer>
+                <div class="row" style="width:260px" border-height="1000">
+                    <div class="col-sm-4" style="color:white"><a href="https://www.linkedin.com/in/craig-kelly-5525a5173/" target="_top"><b style="color:white">LinkedIn</b></a></div>
+                            <div class="col-sm-4" style="color:white; width:80px"><a href="index.html" target="top"><b style="color:white">About </b></a></div>
+                            <div class="col-sm-4" style="color:white;"> <a href="mailto:crkelly86@gmail.com?Subject=Hello%20I%20saw%20your%20portfolio" target="_top"><b style="color:white">Contact</b></a></div>
+                            <div img src="/IMG_20190515_185232_152.jpg"></div>
+                            <div class="row" style="width:260px" border-height="1000">
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
