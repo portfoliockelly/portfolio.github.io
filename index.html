@@ -1,378 +1,1043 @@
 
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> - Developer Portfolio</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
 
-gtag('config', '', { 'optimize_id': 'GTM-K7TCZCL'});
-</script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <meta name="description" content="Programming Portfolio">
-    <meta name="keywords" content="HTML,CSS,JavaScript">
     <meta name="author" content="Craig Kelly">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
-        .imgscale {
-           
-
-        }
-
-        body {
-            margin: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #262626;
-            height:100%;
-            top:500px;
-            margin-bottom:-200px;
-            padding-top:-10%;
-        }
-
-        .AlphaFiller {
-            background-color: none;
-            color: black;
-            padding: 0px;
-            font-size: 100%;
-            border: 5px;
-            position: relative;
-            margin-top: 5px;
-            margin-bottom: 10px;
-        }
-
-        .header {
-            background-color: none;
-            color: white;
-            padding: 7px;
-            font-size: 100%;
-            border: 5px;
-            position: relative;
-            margin-top: -170px;
-            margin-bottom: -3px;
-            border-radius: 25px;
-            margin-left: 10px;
-            margin-right: 10px;
-            border-bottom-right-radius:25%;
-        }
-
-        .footer {
-            background-color: black;
-            color: black;
-            padding-left: 7px;
-            padding-right: 7px;
-            display: block;
-            line-height: 2;
-            height: 150px;
-            border-top:25px thick;
-            border-bottom-left-radius: 25px;
-            border-bottom-right-radius: 25px;
-            border-top-left-radius: 25%;
-            border-top-right-radius: 25%;
-            margin: 0;
-            position: relative;
-            width: 100%;
-        }
-
-        .footerText {
-           margin-top: 40px;
-            margin-left: 10%;
-            height: 10px;
-            padding-top: 20px;
-            width:20px;
-            position:absolute;
-            object-position:left;
-           
-         
-            
-        }
-
-        .img-Portrate {
-            margin-left: 1500px;
-            position:static;
-        }
-
-        h1 {
-            margin: -15px;
-            border-radius: 0;
-            padding: 0;
-            height: inherit;
-            border-radius: 25px;
-        }
-
-
-        h2 {
-            margin-bottom: 0;
-            margin-top: 0px;
-            marker: none;
-        }
-
-        .h3 {
-            margin-bottom: 0;
-            margin-top: 0px;
-            marker: none;
-        }
-
-        .top-left-Logo {
-            text-decoration-color: white;
-            position: absolute;
-            top: 50%;
-            left: 35px;
-            font-size: 45px;
-            font-style: italic;
-            font-display: block;
-            color: white;
-            margin-top: -90px;
-        }
-
-        .linkColour {
-            text-decoration: none;
-            color: black;
-        }
-
-        /* >>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<< */
-        .topnav {
-            overflow: hidden;
-            background-position: left;
-            enable-background: accumulate;
-            background-image: url(whiteAlpha.png);
-            margin-top: auto;
-            color: black;
-            position: relative;
-            background-repeat: repeat-x;
-        }
-
-            .topnav a {
-                position: center;
-                float: left;
-                display: block;
-                color: black;
-                text-align: left;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 27px;
-            }
-
-                .topnav a:hover {
-                    background-color: #81513e;
-                    color: black;
-                    background-position: left;
-                    background-repeat: repeat;
-                }
-
-                .topnav a.active {
-                    background-color: white;
-                    color: black;
-                }
-
-            .topnav .icon {
-                display: none;
-            }
-
-        @media screen and (max-width: 992px) {
-            .topnav a:not(:first-child) {
-                display: none;
-                width: auto;
-                padding-left: 12px;
-                padding-right: 12px;
-            }
-
-            .topnav a.icon {
-                float: right;
-                display: block;
-            }
-        }
-
-        @media screen and (max-width: 992px) {
-            .topnav.responsive {
-                position: relative;
-            }
-
-                .topnav.responsive .icon {
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                }
-
-                .topnav.responsive a {
-                    float: none;
-                    display: block;
-                    text-align: left;
-                }
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            overflow: hidden;
-            background-color: none;
-            position: -webkit-sticky; /* Safari */
-            position: sticky;
-            top: 0;
-          
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            margin-left: -12px;
-            margin-right: -12px;
-            z-index:1;
-        }
-
-        li {
-            float: initial;
-            margin: 0;
-        }
-
-            li b {
-                float: left;
-            }
-
-            li a {
-                display: compact;
-                color: red;
-                text-align: center;
-                padding: 1px 1px;
-                text-decoration: solid;
-                border-radius: 25px;
-                margin: 0;
-            }
-
-                li a:hover {
-                    background-color: #111;
-                }
-
-        .div2 {
-            position: center;
-            width: 90%;
-            height:100%;
-            margin: 6%;
-            margin-bottom:-6%;
-            /*border: 1px dashed gray;*/
-            background-color: #d9d9d9;
-            padding-bottom:10%;
-            border-radius: 25px;
-            top:500px;
-            
-            
-        }
-
-        .Maintinence {
-            position: absolute;
-            margin-bottom: auto;
-            margin-top: auto;
-            height: 500px;
-        }
-    </style>
+    <meta name="description" content="Programming Portfolio">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
 </head>
 <body>
-    <div class="div2" id="central">
-        <div class="header">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-navbar border-bottom box-shadow mb-3">
+            <div class="container   ">
+                <a class="navbar-toggler" type="" data-toggle="collapse" data-target="" aria-controls="navbarSupportedContent"
+                   aria-expanded="false" aria-label="Toggle navigation">
+                   
 
-            <div class="header">
-                <div class="row">
+                </a>
+                <a class="navbar-brand text-light" style="margin-right:0;" href="/"><b style="width: 9%; margin-left: 0;">Craig Kelly</b> <p style="margin-bottom:0"><i>Portfolio</i></p></a>
+               
+                <button class="navbar-toggler align-content-end" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation  align-content-center ">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between  " id="">
+                    <ul class="navbar-nav flex-md-grow-1 align-content-end n-row">
+
+                        <li class="nav-item " style="text-align: center; margin-left: 0; margin-right: 0%;">
+                            <a class="nav-link text-light " href="/"><h5 title="About"><i>About</i></h5></a>
+
+                            
+                        </li>
+
+                        <li class="nav-item" style="text-align:center; margin-right:0%;">
+                            <a class="nav-link text-light" title="Privacy" href="/Home/Privacy"><h5><i>Privacy</i></h5></a>
+                        </li>
+                        <li class="nav-item" style="text-align: center; margin-left: 0; margin-right: 0;">
+                           <a class="fa fa-linkedin-square fa-3x myDIV" style="color:white;" aria-hidden="true" href="https://www.linkedin.com/in/craig-kelly-5525a5173/" title="LinkedIn"></a>
+                            
+                        </li>
+                        <li class="nav-item" style="text-align: center; margin-left: 0; margin-right: 0;">
+
+                          <a class="fa fa-envelope-square fa-3x" style="color:white;" aria-hidden="true" href="/Contact/Contact" title="Contact"></a>
+                          
+
+                        </li>
+                     
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            
+
+<p>
+    <!-- <a asp-action="Create">Create New</a>-->
+</p>
+<section class="intro" id="welcome">
+    <div class="topContainer" id="topContainer" style="top:10%">
+        <div class="introBox">
+            <h1><hr style="border: 1px solid darkgray;">Developer<hr style="border: 1px solid darkgray;"></h1>
+            <h6 class="" style="margin:4%;">Hi, My name is Craig. Thank you for being here and having a look at my website.</h6>
+            <h6 class="">I am looking for commercial experience in both front-end and back-end Web Development.</h6>
+
+        </div>
+        <h1>
+            
+        </h1>
+    </div>
+</section>
+<section class="sandwichmeat" id="meat">
+    <div class=" d-flex flex-wrap containers" style=" padding: 5%;padding-top:0;padding-bottom:0">
+                <div class="card cardAttrabute w3-hover-grayscale with w3-hover-opacity" style="width: 50%;" data-toggle="modal" data-target="#about" title="About me">
+                    <img src=/media/AboutMe.png class="card-img-top w3-hover-red with w3-hover-opacity" alt="About me">
+                    <div class="card-img-overlay">
 
 
-                    <h1>
-                        <img src="LogoImageBannarPic.png" alt="LandscapeImg" style="width: 100% " height="450" border-radius="25px" />
-                    </h1>   <div class="col-sm-8">
 
-                        <div class="row">
-                            <div class="top-left-Logo">
-                                <div class="col-sm-8" style="width:200px" height="10">
-                                    <h2><a href="index.html" style="text-decoration:none"><b style="color:white"> Portfolio.<br /><small style="font-size:30px">Craig Kelly</small> </b></a></h2>
+                        <p class="card-text"></p>
+                    </div>
 
-                                </div>
 
+                </div>
+            <div id="about" class="modal fade " data-backdrop="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <p><h2>About me</h2></p>
+                            <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="p-4 text-center">
+                                <p class="card-text">I am a Software Developer with a background of Game and Application development.I originally trained using the C-Sharp language and then moved on to learn more about html5, Css, Sql, Bootstrap, and Lua.</p>
+                                <p class="card-text">I am result orientated and seeking commercial experience to add to what I already learned in production in college and University. I am looking to develop my skills and become an accomplished full-stack developer. </p>
+
+                                <p class="card-text"></p>
 
                             </div>
-
-
                         </div>
+                        <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
                     </div>
                 </div>
             </div>
+                <div class="card cardAttrabute w3-hover-grayscale with w3-hover-opacity" style="width: 50%;" data-toggle="modal" data-target="#development" title="Development ">
+                    <img src=/media/dev.png class="card-img-top w3-hover-red with w3-hover-opacity" alt="Development ">
+                    <div class="card-img-overlay">
 
 
 
-            <ul>
-                <li>
-                    <div class="topnav" id="myTopnav">
-                        <div class="AlphaFiller">
-                            <div style="padding-left:35%">
-                                <p></p>
-                                  <a href="index.html">About</a>
-                                <a href="OOP.html">OOP</a>
-                                <a href="UtilityAI.html">Utility Ai</a>
+                        <p class="card-text"></p>
+                    </div>
 
-                                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                                    <i class="fa fa-bars"></i>
-                                </a>
+
+                </div>
+            <div id="development" class="modal fade " data-backdrop="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <p><h2>Development </h2></p>
+                            <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="p-4 text-center">
+                                <p class="card-text">My education in computer games development is where I learned the fundamentals of computer science. From binary and computer history through to building forms and fully playable computer games. Using and Implementing Audio software for both soundtracks and voiceovers I learned to edit and create audio for use within the products I made.Other Software such as Auto - Cad,Blender, Adobe PhotoShop, Gimp, Adobe illustrator, and Adobe Animate, would be for creating other new assets such as in game objects, splash screens and sprites.</p>
+                                <p class="card-text">Technical processes I developed wer the use of development log, scheduling with Gantt charts, recording progress for the development journal.Planning with diagrams such as Activity - diagrams,UML,and Use Case to help plan using the project specifications.Story boards would also be another method used for planning and pitching new concepts.</p>
+
+                                <p class="card-text">From there onwards I researched more programming methods and software.I became proficient in Unity and used this game engine to learn and practice algorithms for Artificial Intelligence methods in pathfinding with my main focus being on Utility AI.In addition I learned some Lua for creating modified game patches for existing games such as GTA5 which often used MySql, so it was a natural progression to move on and learn more about Sql databases and web application software.This brings me to the present where developing in ASP.net(mvc) combines all of these things and gives me new goals for the future.</p>
+
                             </div>
                         </div>
+                        <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                    </div>
+                </div>
+            </div>
+                <div class="card cardAttrabute w3-hover-grayscale with w3-hover-opacity" style="width: 50%;" data-toggle="modal" data-target="#future" title="Future">
+                    <img src=/media/future.png class="card-img-top w3-hover-red with w3-hover-opacity" alt="Future">
+                    <div class="card-img-overlay">
+
+
+
+                        <p class="card-text"></p>
+                    </div>
+
+
+                </div>
+            <div id="future" class="modal fade " data-backdrop="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <p><h2>Future</h2></p>
+                            <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="p-4 text-center">
+                                <p class="card-text">My goal for the near future is to have the opportunity to work in the web and software development industry and work hard at developing a career. My Ideal employer will challenge me to learn industry methods and develop my skills. I strive to make my employer and colleagues succeed and want to be a part of a fantastic company.</p>
+                                <p class="card-text"></p>
+
+                                <p class="card-text"></p>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                    </div>
+                </div>
+            </div>
+                <div class="card cardAttrabute w3-hover-grayscale with w3-hover-opacity" style="width: 50%;" data-toggle="modal" data-target="#oopProduct" title="Production">
+                    <img src=/media/Production.png class="card-img-top w3-hover-red with w3-hover-opacity" alt="Production">
+                    <div class="card-img-overlay">
+
+
+
+                        <p class="card-text"></p>
+                    </div>
+
+
+                </div>
+            <div id="oopProduct" class="modal fade " data-backdrop="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <p><h2>Production</h2></p>
+                            <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="p-4 text-center">
+                                <p class="card-text">Working from a client brief I was part of a team that created the game named Under Construction.This was a game designed to help educate students on the importance of waste management within the construction industry.This product was done over the course of a year working alongside four artists and two other programmers.</p>
+                                <p class="card-text">The video below shows the finished product in a presentation trailer format.</p>
+
+                                    <video width="400" controls>
+                                        <source src="/media/finalProduct.mp4" class="align-content-around" type="video/mp4">
+                                    </video>
+                                <p class="card-text"> Note: The ownership of this game is reserved by Glasgow Caledonian University.</p>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                    </div>
+                </div>
+            </div>
+                <div class="card cardAttrabute w3-hover-grayscale with w3-hover-opacity" style="width: 50%;" data-toggle="modal" data-target="#Utility" title="Utility Ai">
+                    <img src=/media/utility.png class="card-img-top w3-hover-red with w3-hover-opacity" alt="Utility Ai">
+                    <div class="card-img-overlay">
+
+
+
+                        <p class="card-text"></p>
+                    </div>
+
+
+                </div>
+            <div id="Utility" class="modal fade " data-backdrop="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <p><h2>Utility Ai</h2></p>
+                            <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="p-4 text-center">
+                                <p class="card-text">Utility Ai is a very useful concept as it is an Algorithm that has a list of priorities and will organise them to whichever has the highest utility value at that given moment. So the value of any given utility may change depending on its needs which allows an agent to change its current goal to a more valued goal.</p>
+                                <p class="card-text">I created an example AI Agent that has a set of instructions it must carry out before it can move on to the next task. For this example the Agent (ball) must have its health above a certain threshold then collect a shield and ammunition. At that point it can move forward and fire the ammunition. However if these values drop below the threshold it will return to refill them but it will prioritise health over all things as that is the main value that allows it to carry on. </p>
+
+                                <p class="card-text">This Method of AI is used in some Solar Power Plants to keep things running optimally at all times, and has many implications for future applications.  </p>
+                                    <p style="width:410px">
+
+
+                                        <iframe src="https://portfoliockelly.github.io/portfolio.github.io/AILive.html" height="460" width="450" style="-ms-perspective:400px;" allowfullscreen></iframe>
+
+
+
+                                    </p>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                    </div>
+                </div>
+            </div>
+                <div class="card cardAttrabute w3-hover-grayscale with w3-hover-opacity" style="width: 50%;" data-toggle="modal" data-target="#Shop" title="Shopping List">
+                    <img src=/Media/Shop.png class="card-img-top w3-hover-red with w3-hover-opacity" alt="Shopping List">
+                    <div class="card-img-overlay">
+
+
+
+                        <p class="card-text"></p>
+                    </div>
+
+
+                </div>
+            <div id="Shop" class="modal fade " data-backdrop="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <p><h2>Shopping List</h2></p>
+                            <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="p-4 text-center">
+                                <p class="card-text">Browse and Alter</p>
+                                <p class="card-text">The shopping List</p>
+
+                                <p class="card-text">Database here!</p>
+                                    <a href="/InfoDisplay/Shop" type="button" class="btn btn-light"><b><u>Browse Shop</u></b></a>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade " data-backdrop="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <p><h2></h2></p>
+                            <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="p-4 text-center">
+                                <p class="card-text"></p>
+                                <p class="card-text"></p>
+
+                                <p class="card-text"></p>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade " data-backdrop="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <p><h2></h2></p>
+                            <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="p-4 text-center">
+                                <p class="card-text"></p>
+                                <p class="card-text"></p>
+
+                                <p class="card-text"></p>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade " data-backdrop="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <p><h2></h2></p>
+                            <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="p-4 text-center">
+                                <p class="card-text"></p>
+                                <p class="card-text"></p>
+
+                                <p class="card-text"></p>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade " data-backdrop="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <p><h2></h2></p>
+                            <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="p-4 text-center">
+                                <p class="card-text"></p>
+                                <p class="card-text"></p>
+
+                                <p class="card-text"></p>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade " data-backdrop="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <p><h2></h2></p>
+                            <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="p-4 text-center">
+                                <p class="card-text"></p>
+                                <p class="card-text"></p>
+
+                                <p class="card-text"></p>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade " data-backdrop="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <p><h2></h2></p>
+                            <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="p-4 text-center">
+                                <p class="card-text"></p>
+                                <p class="card-text"></p>
+
+                                <p class="card-text"></p>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <section class="intro" id="welcome">
+        <div class="topContainer" id="topContainer" style="top:10%">
+            <div class="introBox">
+                <h1><hr style="border: 1px solid darkgray;">Thank You<hr style="border: 1px solid darkgray;"></h1>
+                <p class="">This WebSite was made using the following programming methods.</p>
+                <p class="">HTML, CSS, BootStrap, APS.Net(Mvc), Sql, and C-Sharp.</p>
+            </div>
+            <h1></h1>
+        </div>
+    </section>
+    <div class=" d-flex flex-wrap logoContainers">
+                <div class="card logoAttrabute" data-toggle="modal" data-target="#html5">
+                    <img src=/media/html.png class="card-img-logo w3-hover-grayscale" alt="html5">
+
+
+
+                </div>
+                <div class="card logoAttrabute" data-toggle="modal" data-target="#css">
+                    <img src=/media/css.png class="card-img-logo w3-hover-grayscale" alt="css">
+
+
+
+                </div>
+                <div class="card logoAttrabute" data-toggle="modal" data-target="#bootstrap">
+                    <img src=/media/bootstrap.png class="card-img-logo w3-hover-grayscale" alt="bootstrap">
+
+
+
+                </div>
+                <div class="card logoAttrabute" data-toggle="modal" data-target="#asp.net">
+                    <img src=/media/aspnet.png class="card-img-logo w3-hover-grayscale" alt="asp.net">
+
+
+
+                </div>
+                <div class="card logoAttrabute" data-toggle="modal" data-target="#sql;">
+                    <img src=/media/sql.png class="card-img-logo w3-hover-grayscale" alt="sql;">
+
+
+
+                </div>
+                <div class="card logoAttrabute" data-toggle="modal" data-target="#c#;">
+                    <img src=/media/c-sharp.png class="card-img-logo w3-hover-grayscale" alt="c#;">
+
+
+
+                </div>
+    </div>
+    <!--    <div class="row cardrow">
+
+        <div class="col-sm-4 containers">
+            <a class="display-1 WelcomeCardDisplay" data-toggle="modal" data-target="#about" )>
+                <div class="card bg-light text-light">
+                    <img src="/media/hello.jpg" class="card-img" alt="About me">
+                    <div class="card-img-overlay">
+                        <h2> <span class="cbadge bg-dark badgesize">About Me</span></h2>
+                        <img src=item.Image class="card-img" alt="Development">
+
+                        <p class="card-text"> <img src="/media/development.jpg "></p>
 
                     </div>
-            </ul>
-
-            <!-- <div class="Maintinence">
-        <img src="/construction.png" alt="LandscapeImg" style="width: 100% " height="450" border-radius="25px" />
-    </div>-->
-
-            <div style="padding-left:16px" padding-right="16" height="100%">
-                <h1>&nbsp;</h1>
-                <h2><span style="color: #000000;">About me</span></h2>
-                <p><span style="color: #000000;">Hi, I&rsquo;m Craig.</span></p>
-                <p><span style="color: #000000;">I am in my 30's and over the last few years, I have fallen in love with the world of programming.</span></p>
-                <p><span style="color: #000000;">Having spent most of my career in a completely different field, I had always been more interested in the technical aspects of things. So, in 2016 I returned to education to learn more about programming.</span></p>
-                <h3><span style="color: #000000;">Game Development. A Brief Summary</span></h3>
-                <p><span style="color: #000000;">Returning to Education I learned how to program in C#. Throughout this period, I learned how to program for computer applications, creating small applications such as surveys, calculators, multiple choice quiz, and Video Games. Through this learning process, it taught me how to plan forward on the technical side using diagrams such as UML, Activity diagrams and design documentation. From then I have worked in group projects of nine-plus as a part of the key programming team making a game for client-based briefs, keeping to a set schedule and deadlines using visual studio, Unity, and XNA.</span></p>
-                <h2><span style="color: #000000;">Still Eager to Learn More</span></h2>
-                <p><span style="color: #000000;">I have no intention of settling for C# programming. I am still teaching myself new logic languages such as HTML and CSS, for example, I wrote this website in Visual Studio. I have also written small booking systems for recording customer bookings with dates of arrival that were stored in a small internal back up drive within the workplace. This would also send out an email to the client and company confirming the booking. This was in the aim to make the system faster and easier to deal with when handling consumers.</span></p>
-                <p><span style="color: #000000;">Thank for reading this. There are some examples of my work in the tab links.</span></p>
-
-                <ul>
-
-                    <li>
-                        <script>
-                            function myFunction() {
-                                var x = document.getElementById("myTopnav");
-                                if (x.className === "topnav") {
-                                    x.className += " responsive";
-                                } else {
-                                    x.className = "topnav";
-                                }
-                            }
-                        </script>
-
-                </ul>
+                </div>
+            </a>
+        </div>
 
 
+        <div id="about" class="modal fade " data-backdrop="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <p><h2>About Me</h2></p>
+                        <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-4 text-center">
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                </div>
             </div>
         </div>
-        
+
+
+
+
+
+
+
+
+
+
+
 
     </div>
-    <div class="footer" style="width:100%" >
-        <div class="footerText">
-            <footer>
+    <div class="row cardrow">
+
+        <div class="col-sm-4 containers">
+            <a class="display-1 WelcomeCardDisplay" data-toggle="modal" data-target="#about" )>
+                <div class="card bg-light text-light">
+                    <img src="/media/hello.jpg" class="card-img" alt="About me">
+                    <div class="card-img-overlay">
+                        <h2> <span class="cbadge bg-dark badgesize">About Me</span></h2>
+                        <img src=item.Image class="card-img" alt="Development">
+
+                        <p class="card-text"> <img src="/media/development.jpg "></p>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div id="about" class="modal fade " data-backdrop="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <p><h2>About Me</h2></p>
+                        <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-4 text-center">
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="row cardrow">
+
+        <div class="col-sm-4 containers">
+            <a class="display-1 WelcomeCardDisplay" data-toggle="modal" data-target="#about" )>
+                <div class="card bg-light text-light">
+                    <img src="/media/hello.jpg" class="card-img" alt="About me">
+                    <div class="card-img-overlay">
+                        <h2> <span class="cbadge bg-dark badgesize">About Me</span></h2>
+                        <img src=item.Image class="card-img" alt="Development">
+
+                        <p class="card-text"> <img src="/media/development.jpg "></p>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div id="about" class="modal fade " data-backdrop="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <p><h2>About Me</h2></p>
+                        <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-4 text-center">
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="row cardrow">
+
+        <div class="col-sm-4 containers">
+            <a class="display-1 WelcomeCardDisplay" data-toggle="modal" data-target="#about" )>
+                <div class="card bg-light text-light">
+                    <img src="/media/hello.jpg" class="card-img" alt="About me">
+                    <div class="card-img-overlay">
+                        <h2> <span class="cbadge bg-dark badgesize">About Me</span></h2>
+                        <img src=item.Image class="card-img" alt="Development">
+
+                        <p class="card-text"> <img src="/media/development.jpg "></p>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div id="about" class="modal fade " data-backdrop="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <p><h2>About Me</h2></p>
+                        <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-4 text-center">
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="row cardrow">
+
+        <div class="col-sm-4 containers">
+            <a class="display-1 WelcomeCardDisplay" data-toggle="modal" data-target="#about" )>
+                <div class="card bg-light text-light">
+                    <img src="/media/hello.jpg" class="card-img" alt="About me">
+                    <div class="card-img-overlay">
+                        <h2> <span class="cbadge bg-dark badgesize">About Me</span></h2>
+                        <img src=item.Image class="card-img" alt="Development">
+
+                        <p class="card-text"> <img src="/media/development.jpg "></p>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div id="about" class="modal fade " data-backdrop="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <p><h2>About Me</h2></p>
+                        <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-4 text-center">
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="row cardrow">
+
+        <div class="col-sm-4 containers">
+            <a class="display-1 WelcomeCardDisplay" data-toggle="modal" data-target="#about" )>
+                <div class="card bg-light text-light">
+                    <img src="/media/hello.jpg" class="card-img" alt="About me">
+                    <div class="card-img-overlay">
+                        <h2> <span class="cbadge bg-dark badgesize">About Me</span></h2>
+                        <img src=item.Image class="card-img" alt="Development">
+
+                        <p class="card-text"> <img src="/media/development.jpg "></p>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div id="about" class="modal fade " data-backdrop="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <p><h2>About Me</h2></p>
+                        <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-4 text-center">
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="row cardrow">
+
+        <div class="col-sm-4 containers">
+            <a class="display-1 WelcomeCardDisplay" data-toggle="modal" data-target="#about" )>
+                <div class="card bg-light text-light">
+                    <img src="/media/hello.jpg" class="card-img" alt="About me">
+                    <div class="card-img-overlay">
+                        <h2> <span class="cbadge bg-dark badgesize">About Me</span></h2>
+                        <img src=item.Image class="card-img" alt="Development">
+
+                        <p class="card-text"> <img src="/media/development.jpg "></p>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div id="about" class="modal fade " data-backdrop="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <p><h2>About Me</h2></p>
+                        <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-4 text-center">
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="row cardrow">
+
+        <div class="col-sm-4 containers">
+            <a class="display-1 WelcomeCardDisplay" data-toggle="modal" data-target="#about" )>
+                <div class="card bg-light text-light">
+                    <img src="/media/hello.jpg" class="card-img" alt="About me">
+                    <div class="card-img-overlay">
+                        <h2> <span class="cbadge bg-dark badgesize">About Me</span></h2>
+                        <img src=item.Image class="card-img" alt="Development">
+
+                        <p class="card-text"> <img src="/media/development.jpg "></p>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div id="about" class="modal fade " data-backdrop="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <p><h2>About Me</h2></p>
+                        <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-4 text-center">
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="row cardrow">
+
+        <div class="col-sm-4 containers">
+            <a class="display-1 WelcomeCardDisplay" data-toggle="modal" data-target="#about" )>
+                <div class="card bg-light text-light">
+                    <img src="/media/hello.jpg" class="card-img" alt="About me">
+                    <div class="card-img-overlay">
+                        <h2> <span class="cbadge bg-dark badgesize">About Me</span></h2>
+                        <img src=item.Image class="card-img" alt="Development">
+
+                        <p class="card-text"> <img src="/media/development.jpg "></p>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div id="about" class="modal fade " data-backdrop="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <p><h2>About Me</h2></p>
+                        <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-4 text-center">
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="row cardrow">
+
+        <div class="col-sm-4 containers">
+            <a class="display-1 WelcomeCardDisplay" data-toggle="modal" data-target="#about" )>
+                <div class="card bg-light text-light">
+                    <img src="/media/hello.jpg" class="card-img" alt="About me">
+                    <div class="card-img-overlay">
+                        <h2> <span class="cbadge bg-dark badgesize">About Me</span></h2>
+                        <img src=item.Image class="card-img" alt="Development">
+
+                        <p class="card-text"> <img src="/media/development.jpg "></p>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div id="about" class="modal fade " data-backdrop="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <p><h2>About Me</h2></p>
+                        <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-4 text-center">
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="row cardrow">
+
+        <div class="col-sm-4 containers">
+            <a class="display-1 WelcomeCardDisplay" data-toggle="modal" data-target="#about" )>
+                <div class="card bg-light text-light">
+                    <img src="/media/hello.jpg" class="card-img" alt="About me">
+                    <div class="card-img-overlay">
+                        <h2> <span class="cbadge bg-dark badgesize">About Me</span></h2>
+                        <img src=item.Image class="card-img" alt="Development">
+
+                        <p class="card-text"> <img src="/media/development.jpg "></p>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div id="about" class="modal fade " data-backdrop="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <p><h2>About Me</h2></p>
+                        <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-4 text-center">
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="row cardrow">
+
+        <div class="col-sm-4 containers">
+            <a class="display-1 WelcomeCardDisplay" data-toggle="modal" data-target="#about" )>
+                <div class="card bg-light text-light">
+                    <img src="/media/hello.jpg" class="card-img" alt="About me">
+                    <div class="card-img-overlay">
+                        <h2> <span class="cbadge bg-dark badgesize">About Me</span></h2>
+                        <img src=item.Image class="card-img" alt="Development">
+
+                        <p class="card-text"> <img src="/media/development.jpg "></p>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div id="about" class="modal fade " data-backdrop="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <p><h2>About Me</h2></p>
+                        <div class="modal-title text-md"></div> <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-4 text-center">
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer"> <button type="button" class="btn btn-light" data-dismiss="modal">Close</button> </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+-->
+</section>
+
+<a class="fa fa-arrow-up fa-3x" style="color:darkslategrey" aria-hidden="true" href="#" ></a>
+
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - Craig Kelly Portfolio - <a href="/Home/Privacy">Privacy</a>
+            <div class="row" style="width:400px" border-height="1000">
+                <div class="col-sm-4 text-dark " ><a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/craig-kelly-5525a5173/" target="_top"><b>LinkedIn</b></a></div>
+                <div class="col-sm-4 text-dark"  width:80px"><a class="fa fa-user-circle" aria-hidden="true" href="/InfoDisplay/Welcome" target="top"><b>About </b></a></div>
+                <div class="col-sm-4 text-dark" > <a  class="fa fa-envelope" aria-hidden="true" href="/Contact/Contact" target="_top"><b>Contact</b></a></div>
+               
+
                 <div class="row" style="width:260px" border-height="1000">
-                    <div class="col-sm-4" style="color:white"><a href="https://www.linkedin.com/in/craig-kelly-5525a5173/" target="_top"><b style="color:white">LinkedIn</b></a></div>
-                            <div class="col-sm-4" style="color:white; width:80px"><a href="index.html" target="top"><b style="color:white">About </b></a></div>
-                            <div class="col-sm-4" style="color:white;"> <a href="mailto:crkelly86@gmail.com?Subject=Hello%20I%20saw%20your%20portfolio" target="_top"><b style="color:white">Contact</b></a></div>
-                            <div img src="/IMG_20190515_185232_152.jpg"></div>
-                            <div class="row" style="width:260px" border-height="1000">
-                    </div>
                 </div>
-            </footer>
-        </div>
-    </div>
+            </div>
+            </div>
+</footer>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0"></script>
+    
 </body>
 </html>
